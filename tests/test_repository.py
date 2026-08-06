@@ -69,6 +69,11 @@ class PublicationRepositoryTests(unittest.TestCase):
         self.assertIn("CERN-OHL-P-2.0", readme)
         self.assertRegex(readme, re.compile(r"Bluetooth.*(?:SPP|RFCOMM)|(?:SPP|RFCOMM).*Bluetooth", re.I | re.S))
 
+        mit_license = (ROOT / "LICENSES/MIT.txt").read_text(encoding="utf-8")
+        self.assertIn("Copyright (c) 2026 Jiang Zexuan", mit_license)
+        self.assertNotIn("<year>", mit_license)
+        self.assertNotIn("<copyright holders>", mit_license)
+
     def test_no_large_files_or_machine_paths(self):
         large = [str(p.relative_to(ROOT)) for p in ROOT.rglob("*") if p.is_file() and p.stat().st_size > 5 * 1024 * 1024]
         self.assertEqual([], large, f"files over 5 MiB: {large}")
