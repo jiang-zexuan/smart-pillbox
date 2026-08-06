@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能药盒</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_plan">计划</string>
+    <string name="tab_history">记录</string>
+    <string name="tab_settings">设置</string>
+    <string name="ble_connected">已连接智能药盒</string>
+    <string name="ble_disconnected">未连接智能药盒</string>
+    <string name="sync_to_device">同步到药盒</string>
+    <string name="simulate_alert">模拟漏服通知</string>
+    <string name="simulate_sms">模拟漏服短信</string>
+</resources>

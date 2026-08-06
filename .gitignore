@@ -1,0 +1,48 @@
+# Android / Gradle
+.gradle/
+**/build/
+**/.cxx/
+local.properties
+.idea/
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# PlatformIO / embedded build output
+.pio/
+.pioenvs/
+.clangd/
+.cache/
+
+# Python / CAD generated state
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.glb
+*.bak
+*.tmp
+*.swp
+
+# OS and editor state
+.DS_Store
+Thumbs.db
+*.user
+*.suo
+*.code-workspace
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.secret
+
+# Generated reports
+coverage/
+dist/

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 药丸图标 -->
+    <path
+        android:fillColor="#4A90D9"
+        android:pathData="M54,30 C40,30 28,42 28,54 C28,60 30,68 36,72 L72,72 C78,68 80,60 80,54 C80,42 68,30 54,30 Z" />
+    <!-- 药丸高光 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M42,36 C34,42 34,50 38,54 L50,36 Z" />
+</vector>
