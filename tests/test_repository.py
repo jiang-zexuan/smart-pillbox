@@ -64,7 +64,7 @@ class PublicationRepositoryTests(unittest.TestCase):
 
     def test_readme_states_scope_and_license_split(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("独立开发的课程原型", readme)
+        self.assertIn("Android 应用、STM32 固件", readme)
         self.assertIn("MIT", readme)
         self.assertIn("CERN-OHL-P-2.0", readme)
         self.assertRegex(readme, re.compile(r"Bluetooth.*(?:SPP|RFCOMM)|(?:SPP|RFCOMM).*Bluetooth", re.I | re.S))
