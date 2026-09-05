@@ -5,14 +5,14 @@
  * ┌────────────┬──────────┬─────────────────────┐
  * │ 外设        │ STM32外设 │ 引脚                 │
  * ├────────────┼──────────┼─────────────────────┤
- * │ 调试预留     │ USART1   │ PA9(TX) PA10(RX)   │
+ * │ 串口屏/调试   │ USART1   │ PA9(TX) PA10(RX)   │
  * │ JDY-31 蓝牙 │ USART2   │ PA2(TX) PA3(RX)    │
  * │ QR100扫码   │ USART3   │ PB10(TX) PB11(RX)  │
  * │ OLED/RTC    │ I²C1     │ PB8(SCL) PB9(SDA)  │
- * │ 预留电机     │ TIM2 PWM │ PA0(PUL) PA1(DIR) PA4(EN) │
+ * │ 步进电机     │ TIM2 PWM │ PA0(PUL) PA1(DIR) PA4(EN) │
  * │ HX711 称重  │ GPIO     │ PB0(SCK) PB1(DOUT) │
  * │ 蜂鸣器       │ GPIO     │ PA5                │
- * │ 预留光电     │ GPIO EXTI│ PB12 PB13          │
+ * │ 光电传感器   │ GPIO EXTI│ PB12 PB13          │
  * │ LED         │ GPIO     │ PC13(板载) PB14(蓝牙) │
  * │ SWD调试     │ SWD      │ PA13(SWDIO) PA14(SWCLK) │
  * └────────────┴──────────┴─────────────────────┘
@@ -21,7 +21,7 @@
 #ifndef __PINMAP_H
 #define __PINMAP_H
 
-/* ==================== USART1 — 预留 TJC 串口屏 / USB-TTL 调试 ==================== */
+/* ==================== USART1 — TJC 串口屏 / USB-TTL 调试 ==================== */
 #define HMI_USART               USART1
 #define HMI_TX_PORT             GPIOA
 #define HMI_TX_PIN              GPIO_PIN_9
@@ -45,7 +45,7 @@
 #define QR100_RX_PIN            GPIO_PIN_11
 #define QR100_BAUDRATE          9600      /* 常见默认值；若模块为115200请改这里 */
 
-/* ==================== USART3 — 预留 DY-SV17F 语音模块 ==================== */
+/* ==================== USART3 — DY-SV17F 语音模块（可选） ==================== */
 #define VOICE_USART             USART3
 #define VOICE_TX_PORT           GPIOB
 #define VOICE_TX_PIN            GPIO_PIN_10

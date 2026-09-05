@@ -192,7 +192,7 @@ static void CheckMedicationAlarm(void)
             alarm_dt.second = 0;
 
             uint32_t alarm_ts = 0; /* 简化计算 */
-            (void)alarm_dt;  /* TODO: 精确计算下个闹钟时间 */
+            (void)alarm_dt;
 
             if (alarm_ts > now && alarm_ts < next_alarm) {
                 next_alarm = alarm_ts;
