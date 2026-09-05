@@ -4,6 +4,44 @@
 
 ![实物原型](docs/images/product/assembled-prototype.jpg)
 
+## 实物与结构展示
+
+### 实物原型
+
+系统装配完成后的整体外观，包含分药转盘、显示屏和扫码区域。
+
+![自动分药系统实物原型](docs/images/product/assembled-prototype.jpg)
+
+### 外壳打印
+
+参数化外壳的打印与装配效果。
+
+![自动分药系统外壳打印](docs/images/product/enclosure-printing.jpg)
+
+### 内部电子器件
+
+内部控制板、蓝牙模块、称重模块及其他外设的安装状态。
+
+![自动分药系统内部电子器件](docs/images/product/internal-electronics.jpg)
+
+### 三维结构总览
+
+CAD 模型展示系统整体结构与各部件的空间关系。
+
+![自动分药系统三维结构总览](docs/images/cad/product-overview.png)
+
+### 正面扫码与显示区域
+
+正面视图展示 QR100 扫码器、显示屏和人机交互区域。
+
+![自动分药系统正面扫码与显示区域](docs/images/cad/front-qr-screen.png)
+
+### 内部布局
+
+CAD 剖视布局展示转盘、电子器件与外壳内部的安装关系。
+
+![自动分药系统内部布局](docs/images/cad/internal-layout.png)
+
 ## 系统组成
 
 系统由 Android 应用、STM32 固件、Bluetooth SPP/RFCOMM 通信链路和参数化外壳构成，实现定时提醒、自动出药、称重检测、漏服记录与手机端管理等完整功能。
